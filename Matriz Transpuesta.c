@@ -6,15 +6,15 @@ int main()
 {
     int f, c;
 
-    printf("Ingrese el número de filas: ");
+    printf("Ingrese el número de filas: "); // Ingreso de numero de filas por parte del usuario
     scanf("%d", &f);
 
-    printf("Ingrese el número de columnas: ");
+    printf("Ingrese el número de columnas: ");// Ingreso de numero de columnas por parte del usuario
     scanf("%d", &c);
     srand(time(NULL));
     int matriz[f][c];
 
-    for (int i = 0; i < f; i++)
+    for (int i = 0; i < f; i++)// genera la matriz aleatoria
     {
         for (int j = 0; j < c; j++)
         {
@@ -31,7 +31,7 @@ int main()
         }
         printf("\n");
     }
-    printf("La matriz inversa es:\n");
+    printf("La matriz inversa es:\n");//Imprime la matriz transpuesta
     for (int i = 0; i < f; i++)
     {
         for (int j = 0; j < c; j++)
